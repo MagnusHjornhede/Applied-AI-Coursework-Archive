@@ -20,131 +20,134 @@ This repository contains core techniques in applied AI/ML—data handling, model
 ## Notebooks
 
 - **[D7041E_lab1.ipynb](./D7041E_lab1.ipynb)** — *LAB 1 Fundamentals of Machine Learning*  
-  _Summary:_  
-  This lab covers the foundational concepts of machine learning through practical examples and experiments.  
+  _Summary:*  
+  The basic ideas behind machine learning.  
 
   - **Supervised vs. Unsupervised Learning**  
-    Examples of supervised tasks are demonstrated using labeled datasets where the target output is known.  
-    Unsupervised methods are explored by clustering data without labels, highlighting the structural differences between the two approaches.  
+    Both labeled and unlabeled approaches are explored: from predicting outcomes with known targets to finding natural groupings in raw data.  
 
   - **Machine Learning Workflow**  
-    The notebook follows the standard ML pipeline: data is loaded and preprocessed, models are trained on a subset of the data, and validation is carried out on held-out samples.  
-    The evaluation stage is used to measure model generalization and to compare different algorithmic choices.  
+    The process follows a clear path: preparing the data, fitting models, validating results, and checking how well they hold up on unseen samples.  
 
   - **Core Algorithms**  
-    Several fundamental algorithms are implemented and tested:  
-    - *Linear Regression* for predicting continuous target variables.  
-    - *Logistic Regression* for binary classification tasks.  
-    - *Decision Trees* for both regression and classification, showing interpretable rule-based decision boundaries.  
+    Classic methods such as linear regression, logistic regression, and decision trees are used to show different ways of handling prediction and classification problems.  
 
   - **Performance Metrics**  
-    A set of key evaluation metrics are calculated and analyzed:  
-    - *Accuracy* to measure overall correctness in classification problems.  
-    - *Precision* and *Recall* to evaluate performance on imbalanced datasets.  
-    - *R²* and *Mean Absolute Error (MAE)* to quantify regression performance.  
+    Results are measured with accuracy, precision/recall, R², and MAE, giving a balanced view of model strengths and weaknesses.  
 
-  The notebook concludes with comparisons of models and metrics, establishing a baseline understanding of how supervised and unsupervised learning methods operate in practice.
+  Finally a comparison of models and metrics, building a solid starting point for later experiments.
 
 ---
 
 - **[D7041E_lab2.ipynb](./D7041E_lab2.ipynb)** — *LAB 2 Word Embedding*  
-  _Summary:_  
-  This lab examines **word representations in Natural Language Processing (NLP)** and demonstrates how raw text can be transformed into numerical vectors that preserve semantic meaning.  
+  _Summary:*  
+  This lab moves into natural language processing, showing how words can be turned into numbers that capture meaning.  
 
-  - **Introduction to Word Embeddings**  
-    Word embeddings are presented as an improvement over traditional bag-of-words models, capturing contextual and semantic information rather than relying only on word counts.  
-
-  - **Word2Vec and GloVe**  
-    Dense vector representations are generated using Word2Vec and GloVe, showing how similar words are mapped close together in the embedding space.  
+  - **Word Embeddings**  
+    Word2Vec and GloVe are introduced as ways of creating dense vector spaces where similar words are placed close together.  
 
   - **Cosine Similarity**  
-    Semantic similarity between words is evaluated using cosine similarity, illustrating how embeddings enable meaningful comparisons beyond simple text matching.  
+    The closeness of word meanings is measured, making it possible to see which terms share context.  
 
-  - **Visualization of Embeddings**  
-    High-dimensional embeddings are reduced and visualized with methods such as t-SNE and PCA, making relationships between words visible in two dimensions.  
+  - **Visualization**  
+    Tools like t-SNE and PCA reduce embeddings to two dimensions, making clusters and relationships easier to spot.  
 
-  - **Downstream Applications**  
-    Embeddings are applied to tasks like text classification and similarity search, demonstrating how they can improve performance by leveraging semantic relationships.  
+  - **Applications**  
+    The embeddings are put to work in tasks such as text classification and similarity search, showing their practical value.  
 
-  The lab highlights how modern NLP relies on embeddings as a foundation for capturing meaning and supporting downstream machine learning models.
+  The lab shows how embeddings go beyond simple word counts, providing a foundation for modern NLP.
 
 ---
 
 - **[D7041E_lab3.ipynb](./D7041E_lab3.ipynb)** — *LAB 3 Random Hyperdimensional Data Representations*  
-  _Summary:_  
-  This lab explores the concept of **hyperdimensional computing (HDC)**, where data is represented using very high-dimensional random vectors instead of conventional low-dimensional features.  
+  _Summary:*  
+  Here the focus shifts to hyperdimensional computing — a less common but powerful way of representing information.  
 
-  - **Motivation for Hyperdimensional Representations**  
-    The lab introduces the rationale for using high-dimensional spaces, emphasizing properties such as robustness to noise, ease of combination, and near-orthogonality of random vectors.  
+  - **Why High Dimensions?**  
+    Random vectors in large dimensions are nearly orthogonal, making them robust to noise and easy to combine.  
 
-  - **Generating High-Dimensional Vectors**  
-    Random vectors are generated and their statistical properties are analyzed, showing how high dimensionality enables separation and resilience in representation.  
+  - **Generating Representations**  
+    High-dimensional vectors are created and their properties examined, showing how separation comes naturally with scale.  
 
-  - **Encoding and Binding Operations**  
-    Operations such as addition, multiplication, and permutation are applied to vectors to encode and bind information, demonstrating how symbolic structures can be represented in distributed form.  
+  - **Encoding and Binding**  
+    Operations like addition, multiplication, and permutation are used to build structured representations out of simple random vectors.  
 
-  - **Application to Classification**  
-    Hyperdimensional representations are used in a simple classification setting, showing how high-dimensional encodings can serve as efficient alternatives to traditional feature engineering.  
+  - **Classification Example**  
+    Hyperdimensional encodings are tested in a basic classification setting and compared with conventional ML pipelines.  
 
-  - **Comparison with Conventional ML Pipelines**  
-    Results are compared with baseline machine learning methods to highlight the benefits and trade-offs of hyperdimensional approaches.  
-
-  The lab demonstrates how hyperdimensional computing can represent data in compact, noise-tolerant ways and opens a perspective on alternative computing paradigms for AI.
+  The lab highlights the strengths of this alternative approach and how it can be used for compact, noise-tolerant learning.
 
 ---
 
 - **[D7041E_lab4.ipynb](./D7041E_lab4.ipynb)** — *LAB 4 Self-Organizing Maps*  
-  _Summary:_  
-  This lab investigates **Self-Organizing Maps (SOMs)**, an unsupervised neural network method used for clustering and visualizing high-dimensional data.  
+  _Summary:*  
+  Working with Self-Organizing Maps (SOMs), a way of clustering and visualizing complex data.  
 
-  - **Concept of Self-Organizing Maps**  
-    SOMs are introduced as competitive learning networks that project high-dimensional input data onto a low-dimensional grid of neurons, preserving topological relationships.  
+  - **Concept**  
+    SOMs map high-dimensional input data onto a two-dimensional grid, with nearby neurons representing similar inputs.  
 
-  - **Training Procedure**  
-    The iterative training process is demonstrated, where neurons compete to represent input vectors and their weights are updated according to a neighborhood function.  
+  - **Training**  
+    Neurons compete to match input vectors, and their weights are updated together with their neighbors, gradually shaping the grid.  
 
-  - **Visualization of Data Mapping**  
-    Data points are mapped to specific regions of the 2D SOM grid, making it possible to see how clusters of similar inputs emerge during training.  
+  - **Visualization**  
+    The trained SOM provides a 2D picture of the data, where clusters and groupings become visible.  
 
   - **Clustering Applications**  
-    SOMs are applied to datasets for clustering tasks, highlighting their ability to group similar items without supervision.  
+    SOMs are used to group similar items and compared with methods like k-means to see differences and overlaps.  
 
-  - **Comparison with Other Clustering Methods**  
-    Results from SOMs are compared with standard techniques such as k-means, showing both the similarities in grouping and the added interpretability of the SOM’s spatial layout.  
-
-  The lab demonstrates how SOMs can reveal structure in complex data and provide an interpretable visualization of clustering outcomes.
+  The lab shows how SOMs make unsupervised learning interpretable by turning abstract data into something visual.
 
 ---
 
 - **[D7041E_lab5.ipynb](./D7041E_lab5.ipynb)** — *LAB 5 ANN and Backpropagation*  
-  _Summary:_  
-  This lab focuses on **Artificial Neural Networks (ANNs)** and the use of **backpropagation** to train them effectively.  
+  _Summary:*  
+  Focus on neural networks and the algorithm that makes them work: backpropagation.  
 
-  - **Perceptron as a Building Block**  
-    The perceptron model is introduced as the simplest form of a neural network, illustrating how linear decision boundaries can be constructed from weighted sums and activation functions.  
+  - **Perceptron**  
+    The perceptron is introduced as the simplest network, useful for showing how weighted inputs lead to decisions.  
 
-  - **Multi-Layer Perceptrons (MLPs)**  
-    The perceptron is extended into multi-layer architectures with hidden layers, allowing the network to capture non-linear relationships in data.  
+  - **Multi-Layer Networks**  
+    Adding hidden layers creates multi-layer perceptrons (MLPs), able to capture non-linear relationships.  
 
   - **Activation Functions**  
-    Different activation functions such as sigmoid, tanh, and ReLU are implemented and compared, showing how they influence learning dynamics and convergence.  
+    Sigmoid, tanh, and ReLU are tested to show how different functions affect learning and performance.  
 
-  - **Backpropagation Algorithm**  
-    The mechanics of backpropagation are demonstrated, including the calculation of gradients, propagation of errors backward through the network, and weight updates using gradient descent.  
+  - **Backpropagation**  
+    The error is traced backwards through the network, with weights updated by gradient descent to improve predictions.  
 
-  - **Training and Evaluation**  
-    Networks are trained on example datasets, with metrics tracked to evaluate learning progress and to compare the effect of different architectures or hyperparameters.  
+  - **Training and Comparison**  
+    Networks of different depths are trained, showing how deeper models handle more complex tasks.  
 
-  - **Comparison of Shallow vs. Deep Networks**  
-    Results highlight how deeper networks with multiple hidden layers outperform single-layer perceptrons in capturing complex patterns.  
-
-  The lab establishes a practical understanding of how ANNs learn and provides insight into the fundamental algorithm that powers modern deep learning.
+  The lab gives a hands-on view of how modern neural networks are trained and why backpropagation is essential.
 
 ---
 
 - **[D7041E_lab6.ipynb](./D7041E_lab6.ipynb)** — *LAB 6 Recurrent Neural Networks*  
-  _Summary:_  
-  This lab explores **Recurrent Neural Networks (RNNs)**, a class of neural networks designed to model sequential and temporal data.  
+  _Summary:*  
+  The lab focuses on sequential data and the networks designed to handle it.  
+
+  - **Sequential Data**  
+    Text, speech, and time-series data are used to show why past context matters for current predictions.  
+
+  - **Vanilla RNN**  
+    A simple recurrent network is built, passing hidden states forward to capture short-term dependencies.  
+
+  - **Training Challenges**  
+    Issues like vanishing and exploding gradients are observed, limiting how well standard RNNs handle long sequences.  
+
+  - **LSTM and GRU**  
+    More advanced architectures with gating mechanisms are introduced, making it possible to retain information over longer spans.  
+
+  - **Applications**  
+    RNNs are tested on tasks such as character prediction and forecasting, showing their ability to learn patterns over time.  
+
+  The lab provides a clear overview of recurrent models, from the basic RNN to LSTM and GRU, and their role in sequence modeling.
+
+---
+
+- **[D7041E_lab6.ipynb](./D7041E_lab6.ipynb)** — *LAB 6 Recurrent Neural Networks*  
+  _Summary:*  
+  Explores **Recurrent Neural Networks (RNNs)**, a class of neural networks designed to model sequential and temporal data.  
 
   - **Sequential Data and Temporal Dependencies**  
     The lab introduces the challenges of sequence modeling, where current predictions depend not only on the present input but also on previous context, such as in text, speech, or time-series data.  
