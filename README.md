@@ -29,8 +29,6 @@ This repository contains core techniques in applied AI/ML—data handling, model
   - Basic performance metrics including **accuracy**, **precision/recall**, and **R²/MAE** for regression tasks  
   - Hands-on implementation in Python using common libraries like **NumPy**, **pandas**, and **scikit-learn**  
 
-  By the end of Lab 1, you will have built and evaluated your first ML models, gaining intuition for how to approach real-world datasets.
-
 ---
 
 - **[D7041E_lab2.ipynb](./D7041E_lab2.ipynb)** — *LAB 2 Word Embedding*  
@@ -43,8 +41,6 @@ This repository contains core techniques in applied AI/ML—data handling, model
   - Exploring **cosine similarity** to measure semantic closeness between words  
   - Visualizing embedding spaces with techniques like **t-SNE** or **PCA**  
   - Applying embeddings in simple downstream tasks such as **text classification** or **similarity search**  
-
-  By completing this lab, you will understand how embeddings serve as the foundation of modern NLP models and practice applying them to real text data.
 
 ---
 
@@ -59,8 +55,6 @@ This repository contains core techniques in applied AI/ML—data handling, model
   - Applying HD representations to simple **classification problems**  
   - Comparing HD computing approaches with conventional machine learning pipelines  
 
-  By the end of this lab, you will gain hands-on experience with hyperdimensional vectors and see how they can be used for efficient, noise-tolerant learning systems.
-
 ---
 
 - **[D7041E_lab4.ipynb](./D7041E_lab4.ipynb)** — *LAB 4 Self-Organizing Maps*  
@@ -73,8 +67,6 @@ This repository contains core techniques in applied AI/ML—data handling, model
   - Visualizing how input vectors are mapped onto a 2D grid  
   - Using SOMs for **clustering tasks** such as grouping similar data points or patterns  
   - Comparing SOM results with conventional clustering approaches (e.g., k-means)  
-
-  By completing this lab, you will gain intuition for how self-organized learning works and how SOMs can be applied to discover structure in high-dimensional data.
 
 ---
 
@@ -90,8 +82,6 @@ This repository contains core techniques in applied AI/ML—data handling, model
   - Training simple ANNs on toy datasets and monitoring performance metrics  
   - Comparing training outcomes with and without hidden layers to understand model capacity  
 
-  By the end of this lab, you will understand how modern neural networks are trained and gain hands-on practice with the foundations of deep learning.
-
 ---
 
 - **[D7041E_lab6.ipynb](./D7041E_lab6.ipynb)** — *LAB 6 Recurrent Neural Networks*  
@@ -105,8 +95,6 @@ This repository contains core techniques in applied AI/ML—data handling, model
   - Introducing improved architectures: **LSTM (Long Short-Term Memory)** and **GRU (Gated Recurrent Unit)**  
   - Training RNNs on simple sequence tasks (e.g., character prediction or time series forecasting)  
   - Comparing RNN-based models with feed-forward ANNs to highlight their advantages on sequential data  
-
-  By completing this lab, you will gain practical experience with sequence modeling and understand how recurrent networks form the backbone of many NLP and time-series applications.
 
 ---
 
