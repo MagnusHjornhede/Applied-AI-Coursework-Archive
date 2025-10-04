@@ -8,7 +8,7 @@ This repository contains core techniques in applied AI/ML—data handling, model
 
 ```bash
 .
-├─ D7041E_lab1.ipynb
+├─ ML_CaseStudy_DataPrep_and_Baseline.ipynb
 ├─ D7041E_lab2.ipynb
 ├─ D7041E_lab3.ipynb
 ├─ D7041E_lab4.ipynb
@@ -19,7 +19,7 @@ This repository contains core techniques in applied AI/ML—data handling, model
 
 ## Notebooks
 
-- **[D7041E_lab1.ipynb](./D7041E_lab1.ipynb)** — *LAB 1 Fundamentals of Machine Learning*  
+- **[ML_CaseStudy_DataPrep_and_Baseline.ipynb](./ML_CaseStudy_DataPrep_and_Baseline.ipynb)** — *LAB 1 Fundamentals of Machine Learning*  
   **Summary**  
   The first lab introduces the basic ideas behind machine learning.  
 
