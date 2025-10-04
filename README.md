@@ -19,8 +19,8 @@ This repository contains core techniques in applied AI/ML—data handling, model
 
 ## Notebooks
 
-- **[ML_CaseStudy_DataPrep_and_Baseline.ipynb](./ML_CaseStudy_DataPrep_and_Baseline.ipynb)** — *LAB 1 
-  **Summary**   
+- **[DataPrep_and_Baseline_Modeling_Iris.ipynb](./DataPrep_and_Baseline_Modeling_Iris.ipynb)** — *LAB 1 
+  **Summary**
   - **Supervised vs. Unsupervised Learning**  
     Both labeled and unlabeled approaches are explored: from predicting outcomes with known targets to finding natural groupings in raw data.  
 
@@ -39,7 +39,7 @@ This repository contains core techniques in applied AI/ML—data handling, model
 
 ---
 
-- **[ML_CaseStudy_Part2_ModelEvaluation.ipynb](./ML_CaseStudy_Part2_ModelEvaluation.ipynb)** — * Word Embedding*  
+- **[HighDimensional_Embeddings_CaseStudy.ipynb](./HighDimensional_Embeddings_CaseStudy.ipynb)** — * Word Embedding*  
 
   - **Word Embeddings**  
     We know that Word2Vec and GloVe are introduced as ways of creating dense vector spaces where similar words are placed close together.  
