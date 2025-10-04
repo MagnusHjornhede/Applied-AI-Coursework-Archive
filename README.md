@@ -21,7 +21,7 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 
 ## Notebooks
 
-### [DataPrep_and_Baseline_Modeling_Iris.ipynb](./DataPrep_and_Baseline_Modeling_Iris.ipynb) — *LAB 1*
+### [DataPrep_and_Baseline_Modeling_Iris.ipynb](./DataPrep_and_Baseline_Modeling_Iris.ipynb)
 
 **Summary**
 
