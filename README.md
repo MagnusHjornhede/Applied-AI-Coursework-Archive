@@ -118,9 +118,3 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - The Zoo dataset illustrates how SOMs group similar entities through feature-based proximity.  
 - The MNIST dataset demonstrates how the same principle scales to complex, high-dimensional image data.  
 - SOMs reveal structure in unlabeled data, providing both visualization and clustering in one interpretable framework.  
-
-**Analogy — How a SOM Works**  
-Imagine a **rubber sheet** stretched above a table covered with scattered magnets, where each magnet represents a data point.  
-As the sheet is lowered, parts of it **pull toward the nearest magnets**, while nearby regions move along to stay smooth.  
-Over time, the sheet reshapes to **mirror the layout of the magnets** — nearby magnets create nearby dips.  
-Similarly, in a SOM, each neuron learns to represent nearby data points, and neighboring neurons adapt together, forming a **2D landscape of your data** where **closeness means similarity**.  
