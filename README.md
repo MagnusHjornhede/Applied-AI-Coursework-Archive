@@ -118,3 +118,31 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - The Zoo dataset illustrates how SOMs group similar entities through feature-based proximity.  
 - The MNIST dataset demonstrates how the same principle scales to complex, high-dimensional image data.  
 - SOMs reveal structure in unlabeled data, providing both visualization and clustering in one interpretable framework.  
+
+### [NeuralNetwork_Backpropagation_MNIST.ipynb](./NeuralNetwork_Backpropagation_MNIST.ipynb) — *Artificial Neural Networks (ANNs) and Backpropagation*  
+
+**Summary**  
+
+- **Objective**  
+  This lab demonstrates how a **fully connected feed-forward neural network** learns through **backpropagation** to classify handwritten digits from the **MNIST dataset**.  
+
+- **Dataset**  
+  - **MNIST** — 60 000 training and 10 000 test samples of 28×28 grayscale digits (0–9).  
+  - Each image is flattened into 784 inputs; labels represent the digit classes.  
+
+- **Approach**  
+  - Implemented a three-layer ANN (784-100-100-10).  
+  - Compared different **learning rates** and activation functions (Sigmoid vs ReLU).  
+  - Training performed for 70 epochs using gradient descent and error backpropagation.  
+  - Performance tracked through training / test error per epoch.  
+
+- **Results**  
+  - Initial error ≈ 0.90 → final ≈ 0.02.  
+  - Corresponds to about **97–98 % classification accuracy** on MNIST test data.  
+  - Lower learning rates improved stability; ReLU accelerated convergence.  
+
+**Key Takeaways**  
+- Backpropagation enables neural networks to learn complex nonlinear mappings by propagating errors backward.  
+- Learning rate selection balances speed and stability.  
+- Even a simple fully connected ANN achieves near-state-of-the-art accuracy on MNIST without convolutional layers.  
+
