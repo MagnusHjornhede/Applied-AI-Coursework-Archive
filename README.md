@@ -186,3 +186,36 @@ The model demonstrates solid generalization for a basic RNN, showing consistent 
 - RNNs process sequences step by step, retaining context through hidden states.  
 - They excel at **temporal or linguistic tasks** where word order and dependency matter.  
 - Variability between runs highlights the stochastic nature of training sequential models.  
+
+### [GrowingSelfOrganizingMap_GSOM.ipynb](./GrowingSelfOrganizingMap_GSOM.ipynb) — *Growing Self-Organizing Map (GSOM)*  
+
+**Summary**  
+
+- **Objective**  
+  This notebook extends the concept of Self-Organizing Maps (SOMs) by implementing a **Growing Self-Organizing Map (GSOM)** — a dynamic neural network that **expands its structure** based on data complexity.  
+  The goal is to show how GSOMs automatically adapt their grid size to represent data more efficiently.  
+
+- **Dataset**  
+  - **Zoo (UCI dataset)** — categorical animal features (17 attributes, 7 classes).  
+  - Chosen for its clear feature-based separations (e.g., mammals, birds, fish) and suitability for visualizing GSOM node growth.  
+
+- **Approach**  
+  - Start with a minimal SOM grid (typically 2×2).  
+  - Allow nodes to **grow dynamically** when the accumulated error in a region exceeds a threshold (the Growth Threshold).  
+  - Each new node inherits nearby weights and adjusts over multiple iterations to preserve topology.  
+  - Visualize how clusters form and how the network grows to represent all data categories.  
+
+- **Results**  
+  | Growth Threshold | Final Node Count | Observed Clusters |
+  |:----------------:|:----------------:|:------------------|
+  | 0.4 | 9 | Partial structure, underfit |
+  | 0.2 | 16 | Clear category clusters |
+  | 0.1 | 25 | Overfitting tendency, dense map |
+
+  Lower thresholds allow finer granularity but may create redundant nodes.  
+  The 0.2 configuration offered the best balance between topology preservation and interpretability.  
+
+**Key Takeaways**  
+- GSOMs improve on SOMs by **automatically growing** in regions with high data variance.  
+- They reveal **data structure adaptively**, avoiding the need to predefine map size.  
+- Useful for **exploratory analysis**, where cluster counts or topology are unknown.  
