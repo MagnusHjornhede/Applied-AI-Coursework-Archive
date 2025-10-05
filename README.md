@@ -94,6 +94,13 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - **Objective**  
   This lab introduces **Self-Organizing Maps (SOMs)** — an **unsupervised neural network** model that projects high-dimensional data into a **two-dimensional grid**, preserving the topology of input relationships.  
 
+- **Datasets**  
+  Two datasets are explored:  
+  - **Zoo (UCI dataset)** — categorical animal features (17 attributes, 7 classes).  
+    This dataset serves as a conceptual starting point to show how SOMs cluster structured data.  
+    Animals with similar traits — such as mammals, birds, or fish — naturally form neighboring clusters on the SOM grid, demonstrating **topological preservation**: similar inputs end up near each other on the map.  
+  - **MNIST (handwritten digits)** — 28×28 grayscale images, used to extend SOMs to image data and visualize how digits self-organize into distinct clusters.  
+
 - **Approach**  
   The SOM learns through competitive learning, adjusting neighboring neuron weights to reflect input similarity.  
   Different grid sizes (20×20, 40×40, 80×80) are tested to study the effect of network resolution on clustering quality.  
@@ -103,11 +110,17 @@ This repository contains core techniques in applied AI/ML — data handling, mod
   |:-----------:|:---------------:|:--------------:|
   | 20×20 | 72.0 % | 78.0 % |
   | 40×40 | 96.0 % | 94.0 % |
-  | 80×80 | 98.0 % | — |
+  | 80×80 | 98.0 % | ------ |
 
   Larger grids captured finer feature variations, improving the model’s ability to organize and separate clusters.  
 
 **Key Takeaways**  
-- SOMs provide an intuitive way to visualize and cluster complex, unlabeled data.  
-- Increasing grid resolution enhances accuracy and detail in the learned topology.  
-- Demonstrates how **unsupervised neural learning** can reveal data structure without explicit labels.  
+- The Zoo dataset illustrates how SOMs group similar entities through feature-based proximity.  
+- The MNIST dataset demonstrates how the same principle scales to complex, high-dimensional image data.  
+- SOMs reveal structure in unlabeled data, providing both visualization and clustering in one interpretable framework.  
+
+**Analogy — How a SOM Works**  
+Imagine a **rubber sheet** stretched above a table covered with scattered magnets, where each magnet represents a data point.  
+As the sheet is lowered, parts of it **pull toward the nearest magnets**, while nearby regions move along to stay smooth.  
+Over time, the sheet reshapes to **mirror the layout of the magnets** — nearby magnets create nearby dips.  
+Similarly, in a SOM, each neuron learns to represent nearby data points, and neighboring neurons adapt together, forming a **2D landscape of your data** where **closeness means similarity**.  
