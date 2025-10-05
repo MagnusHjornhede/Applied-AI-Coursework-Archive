@@ -87,3 +87,27 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - Cosine similarity provides a lightweight yet effective decision rule.  
 - Hyperdimensional methods demonstrate how symbolic and statistical ideas meet in modern AI.  
 
+### [UnsupervisedLearning_SelfOrganizingMaps.ipynb](./UnsupervisedLearning_SelfOrganizingMaps.ipynb) — *Self-Organizing Maps (SOMs)*  
+
+**Summary**  
+
+- **Objective**  
+  This lab introduces **Self-Organizing Maps (SOMs)** — an **unsupervised neural network** model that projects high-dimensional data into a **two-dimensional grid**, preserving the topology of input relationships.  
+
+- **Approach**  
+  The SOM learns through competitive learning, adjusting neighboring neuron weights to reflect input similarity.  
+  Different grid sizes (20×20, 40×40, 80×80) are tested to study the effect of network resolution on clustering quality.  
+
+- **Results**  
+  | Grid Size | Train Accuracy | Test Accuracy |
+  |:-----------:|:---------------:|:--------------:|
+  | 20×20 | 72.0 % | 78.0 % |
+  | 40×40 | 96.0 % | 94.0 % |
+  | 80×80 | 98.0 % | — |
+
+  Larger grids captured finer feature variations, improving the model’s ability to organize and separate clusters.  
+
+**Key Takeaways**  
+- SOMs provide an intuitive way to visualize and cluster complex, unlabeled data.  
+- Increasing grid resolution enhances accuracy and detail in the learned topology.  
+- Demonstrates how **unsupervised neural learning** can reveal data structure without explicit labels.  
