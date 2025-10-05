@@ -87,8 +87,7 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - Cosine similarity provides a lightweight yet effective decision rule.  
 - Hyperdimensional methods demonstrate how symbolic and statistical ideas meet in modern AI.  
 
-### [UnsupervisedLearning_SelfOrganizingMaps.ipynb](./UnsupervisedLearning_SelfOrganizingMaps.ipynb) — *Self-Organizing Maps (SOMs)*  
-
+### [UnsupervisedLearning_SelfOrganizingMaps.ipynb](./UnsupervisedLearning_SelfOrganizingMaps.ipynb) 
 **Summary**  
 
 - **Objective**  
@@ -146,3 +145,44 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - Learning rate selection balances speed and stability.  
 - Even a simple fully connected ANN achieves near-state-of-the-art accuracy on MNIST without convolutional layers.  
 
+### [RecurrentNeuralNetworks_SentimentAnalysis.ipynb](./RecurrentNeuralNetworks_SentimentAnalysis.ipynb)
+
+**Summary**  
+
+- **Objective**  
+  This lab introduces **Recurrent Neural Networks (RNNs)** for modeling sequential data.  
+  The task focuses on **sentiment classification**, where the model predicts whether a movie review expresses a positive or negative opinion.  
+
+- **Dataset**  
+  - **IMDB Movie Reviews** — 25 000 labeled reviews for training and 25 000 for testing.  
+  - Each review is represented as a sequence of word indices with a fixed vocabulary size (≈ 10 000 words).  
+
+- **Approach**  
+  - Implemented a simple **RNN-based classifier** trained using backpropagation through time (BPTT).  
+  - Compared multiple runs to evaluate model stability and sensitivity to initialization.  
+  - Performance tracked across epochs, measuring accuracy on the validation and test sets.  
+
+- **Results**
+
+| Run | Accuracy (%) |
+|:---:|:-------------:|
+| 1 | 81.9 |
+| 2 | 84.1 |
+| 3 | 84.0 |
+| 4 | 84.5 |
+| 5 | 84.6 |
+| 6 | 84.9 |
+| 7 | 84.3 |
+| 8 | 84.3 |
+| 9 | 81.6 |
+| 10 | 82.7 |
+
+**Average Accuracy:** ≈ **83.7 %**
+
+
+The model demonstrates solid generalization for a basic RNN, showing consistent accuracy across runs.  
+
+**Key Takeaways**  
+- RNNs process sequences step by step, retaining context through hidden states.  
+- They excel at **temporal or linguistic tasks** where word order and dependency matter.  
+- Variability between runs highlights the stochastic nature of training sequential models.  
