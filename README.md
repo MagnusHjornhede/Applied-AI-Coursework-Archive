@@ -5,25 +5,8 @@
 ![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-A hands-on collection of **AI/ML laboratory notebooks** exploring the fundamentals of applied artificial intelligence —  
+A collection of **AI/ML notebooks** working with the fundamentals of applied artificial intelligence —  
 covering **data handling, modeling, evaluation, visualization, and explainability**.
-
-Each lab demonstrates both conceptual understanding and technical execution, from classical models to neural networks.
-
----
-
-## 📂 Repository Structure
-
-```bash
-.
-├─ DataPrep_and_Baseline_Modeling_Iris.ipynb
-├─ HighDimensional_Embeddings_CaseStudy.ipynb
-├─ LanguageIdentification_HyperdimensionalVectors.ipynb
-├─ D7041E_lab4.ipynb
-├─ D7041E_lab5.ipynb
-├─ D7041E_lab6.ipynb
-└─ README.md  ← you are here
-```
 
 ---
 
@@ -102,7 +85,7 @@ Each lab demonstrates both conceptual understanding and technical execution, fro
 **Summary**  
 
 - **Objective**  
-  This lab introduces **Self-Organizing Maps (SOMs)** — an **unsupervised neural network** model that projects high-dimensional data into a **two-dimensional grid**, preserving the topology of input relationships.  
+  **Self-Organizing Maps (SOMs)** — an **unsupervised neural network** model that projects high-dimensional data into a **two-dimensional grid**, preserving the topology of input relationships.  
 
 - **Datasets**  
   Two datasets are explored:  
@@ -137,7 +120,7 @@ Each lab demonstrates both conceptual understanding and technical execution, fro
 **Summary**  
 
 - **Objective**  
-  This lab demonstrates how a **fully connected feed-forward neural network** learns through **backpropagation** to classify handwritten digits from the **MNIST dataset**.  
+   **Fully connected feed-forward neural network** learning through **backpropagation** to classify handwritten digits from the **MNIST dataset**.  
 
 - **Dataset**  
   - **MNIST** — 60 000 training and 10 000 test samples of 28×28 grayscale digits (0–9).  
@@ -166,7 +149,7 @@ Each lab demonstrates both conceptual understanding and technical execution, fro
 **Summary**  
 
 - **Objective**  
-  This lab introduces **Recurrent Neural Networks (RNNs)** for modeling sequential data.  
+  **Recurrent Neural Networks (RNNs)** used for modeling sequential data.  
   The task focuses on **sentiment classification**, where the model predicts whether a movie review expresses a positive or negative opinion.  
 
 - **Dataset**  
