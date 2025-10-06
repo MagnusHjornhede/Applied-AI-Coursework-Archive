@@ -1,10 +1,18 @@
-# Applied Artificial Intelligence — Notebooks 
+# 🧠 Applied Artificial Intelligence — Notebooks
 
-This repository contains core techniques in applied AI/ML — data handling, modeling, evaluation, and explainability.
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+A hands-on collection of **AI/ML laboratory notebooks** exploring the fundamentals of applied artificial intelligence —  
+covering **data handling, modeling, evaluation, visualization, and explainability**.
+
+Each lab demonstrates both conceptual understanding and technical execution, from classical models to neural networks.
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```bash
 .
@@ -19,7 +27,7 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 
 ---
 
-## Notebooks
+## 🚀 Notebooks Overview
 
 ### [DataPrep_and_Baseline_Modeling_Iris.ipynb](./DataPrep_and_Baseline_Modeling_Iris.ipynb)
 
@@ -87,7 +95,10 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - Cosine similarity provides a lightweight yet effective decision rule.  
 - Hyperdimensional methods demonstrate how symbolic and statistical ideas meet in modern AI.  
 
-### [UnsupervisedLearning_SelfOrganizingMaps.ipynb](./UnsupervisedLearning_SelfOrganizingMaps.ipynb) 
+---
+
+### [UnsupervisedLearning_SelfOrganizingMaps.ipynb](./UnsupervisedLearning_SelfOrganizingMaps.ipynb)
+
 **Summary**  
 
 - **Objective**  
@@ -97,7 +108,7 @@ This repository contains core techniques in applied AI/ML — data handling, mod
   Two datasets are explored:  
   - **Zoo (UCI dataset)** — categorical animal features (17 attributes, 7 classes).  
     This dataset serves as a conceptual starting point to show how SOMs cluster structured data.  
-    Animals with similar traits — such as mammals, birds, or fish — naturally form neighboring clusters on the SOM grid, demonstrating **topological preservation**: similar inputs end up near each other on the map.  
+    Animals with similar traits — such as mammals, birds, or fish — naturally form neighboring clusters on the SOM grid, demonstrating **topological preservation**.  
   - **MNIST (handwritten digits)** — 28×28 grayscale images, used to extend SOMs to image data and visualize how digits self-organize into distinct clusters.  
 
 - **Approach**  
@@ -105,11 +116,12 @@ This repository contains core techniques in applied AI/ML — data handling, mod
   Different grid sizes (20×20, 40×40, 80×80) are tested to study the effect of network resolution on clustering quality.  
 
 - **Results**  
+
   | Grid Size | Train Accuracy | Test Accuracy |
   |:-----------:|:---------------:|:--------------:|
   | 20×20 | 72.0 % | 78.0 % |
   | 40×40 | 96.0 % | 94.0 % |
-  | 80×80 | 98.0 % | ------ |
+  | 80×80 | 98.0 % | — |
 
   Larger grids captured finer feature variations, improving the model’s ability to organize and separate clusters.  
 
@@ -117,6 +129,8 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - The Zoo dataset illustrates how SOMs group similar entities through feature-based proximity.  
 - The MNIST dataset demonstrates how the same principle scales to complex, high-dimensional image data.  
 - SOMs reveal structure in unlabeled data, providing both visualization and clustering in one interpretable framework.  
+
+---
 
 ### [NeuralNetwork_Backpropagation_MNIST.ipynb](./NeuralNetwork_Backpropagation_MNIST.ipynb) — *Artificial Neural Networks (ANNs) and Backpropagation*  
 
@@ -145,6 +159,8 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 - Learning rate selection balances speed and stability.  
 - Even a simple fully connected ANN achieves near-state-of-the-art accuracy on MNIST without convolutional layers.  
 
+---
+
 ### [RecurrentNeuralNetworks_SentimentAnalysis.ipynb](./RecurrentNeuralNetworks_SentimentAnalysis.ipynb)
 
 **Summary**  
@@ -164,28 +180,27 @@ This repository contains core techniques in applied AI/ML — data handling, mod
 
 - **Results**
 
-| Run | Accuracy (%) |
-|:---:|:-------------:|
-| 1 | 81.9 |
-| 2 | 84.1 |
-| 3 | 84.0 |
-| 4 | 84.5 |
-| 5 | 84.6 |
-| 6 | 84.9 |
-| 7 | 84.3 |
-| 8 | 84.3 |
-| 9 | 81.6 |
-| 10 | 82.7 |
+  | Run | Accuracy (%) |
+  |:---:|:-------------:|
+  | 1 | 81.9 |
+  | 2 | 84.1 |
+  | 3 | 84.0 |
+  | 4 | 84.5 |
+  | 5 | 84.6 |
+  | 6 | 84.9 |
+  | 7 | 84.3 |
+  | 8 | 84.3 |
+  | 9 | 81.6 |
+  | 10 | 82.7 |
 
-**Average Accuracy:** ≈ **83.7 %**
-
-
-The model demonstrates solid generalization for a basic RNN, showing consistent accuracy across runs.  
+  **Average Accuracy:** ≈ **83.7 %**
 
 **Key Takeaways**  
 - RNNs process sequences step by step, retaining context through hidden states.  
 - They excel at **temporal or linguistic tasks** where word order and dependency matter.  
 - Variability between runs highlights the stochastic nature of training sequential models.  
+
+---
 
 ### [GrowingSelfOrganizingMap_GSOM.ipynb](./GrowingSelfOrganizingMap_GSOM.ipynb) — *Growing Self-Organizing Map (GSOM)*  
 
@@ -206,6 +221,7 @@ The model demonstrates solid generalization for a basic RNN, showing consistent 
   - Visualize how clusters form and how the network grows to represent all data categories.  
 
 - **Results**  
+
   | Growth Threshold | Final Node Count | Observed Clusters |
   |:----------------:|:----------------:|:------------------|
   | 0.4 | 9 | Partial structure, underfit |
@@ -219,3 +235,4 @@ The model demonstrates solid generalization for a basic RNN, showing consistent 
 - GSOMs improve on SOMs by **automatically growing** in regions with high data variance.  
 - They reveal **data structure adaptively**, avoiding the need to predefine map size.  
 - Useful for **exploratory analysis**, where cluster counts or topology are unknown.  
+
