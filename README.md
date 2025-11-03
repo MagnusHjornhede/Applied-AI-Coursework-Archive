@@ -1,4 +1,4 @@
-# 🧠 Applied Artificial Intelligence — Notebooks
+# Applied Artificial Intelligence — Notebooks
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -10,7 +10,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 
 ---
 
-## 🚀 Notebooks Overview
+## Notebooks Overview
 
 ### [DataPrep_and_Baseline_Modeling_Iris.ipynb](./DataPrep_and_Baseline_Modeling_Iris.ipynb)
 
