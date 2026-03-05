@@ -1,3 +1,13 @@
+This repository contains coursework and experiments from my Master's studies in Applied Artificial Intelligence at Luleå University of Technology.
+
+Topics explored include:
+
+- machine learning algorithms
+- data analysis
+- computer vision
+- neural networks
+  
+
 # Applied Artificial Intelligence — Notebooks
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
