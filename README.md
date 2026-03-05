@@ -19,7 +19,6 @@ Topics explored include:
 A collection of **AI/ML notebooks** working with the fundamentals of applied artificial intelligence —  
 covering **data handling, modeling, evaluation, visualization, and explainability**.
 
----
 
 ## Notebooks Overview
 
@@ -43,7 +42,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 - Core algorithms provide different trade-offs in interpretability and flexibility.  
 - Proper evaluation metrics are critical to judge model quality.  
 
----
+
 
 ### [HighDimensional_Embeddings_CaseStudy.ipynb](./HighDimensional_Embeddings_CaseStudy.ipynb) — *Word Embedding*
 
@@ -66,7 +65,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 - Visualization helps interpret the structure of embedding spaces.  
 - Embeddings power many downstream NLP applications.  
 
----
+
 
 ### [LanguageIdentification_HyperdimensionalVectors.ipynb](./LanguageIdentification_HyperdimensionalVectors.ipynb) — *Hyperdimensional Computing*
 
@@ -89,7 +88,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 - Cosine similarity provides a lightweight yet effective decision rule.  
 - Hyperdimensional methods demonstrate how symbolic and statistical ideas meet in modern AI.  
 
----
+
 
 ### [UnsupervisedLearning_SelfOrganizingMaps.ipynb](./UnsupervisedLearning_SelfOrganizingMaps.ipynb)
 
@@ -124,7 +123,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 - The MNIST dataset demonstrates how the same principle scales to complex, high-dimensional image data.  
 - SOMs reveal structure in unlabeled data, providing both visualization and clustering in one interpretable framework.  
 
----
+
 
 ### [NeuralNetwork_Backpropagation_MNIST.ipynb](./NeuralNetwork_Backpropagation_MNIST.ipynb) — *Artificial Neural Networks (ANNs) and Backpropagation*  
 
@@ -153,7 +152,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 - Learning rate selection balances speed and stability.  
 - Even a simple fully connected ANN achieves near-state-of-the-art accuracy on MNIST without convolutional layers.  
 
----
+
 
 ### [RecurrentNeuralNetworks_SentimentAnalysis.ipynb](./RecurrentNeuralNetworks_SentimentAnalysis.ipynb)
 
@@ -194,7 +193,7 @@ covering **data handling, modeling, evaluation, visualization, and explainabilit
 - They excel at **temporal or linguistic tasks** where word order and dependency matter.  
 - Variability between runs highlights the stochastic nature of training sequential models.  
 
----
+
 
 ### [GrowingSelfOrganizingMap_GSOM.ipynb](./GrowingSelfOrganizingMap_GSOM.ipynb) — *Growing Self-Organizing Map (GSOM)*  
 
